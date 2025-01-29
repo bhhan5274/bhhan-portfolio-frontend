@@ -21,7 +21,7 @@ export default function ThemeProvider({ children }: Props) {
   }
 
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS theme={theme} forceColorScheme="light">
+    <MantineProvider theme={theme} forceColorScheme="light">
       {children}
     </MantineProvider>
   );

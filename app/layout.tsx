@@ -62,7 +62,7 @@ export default function RootLayout({ children }: { children: any }) {
           className={classes.control}
           onClick={(event) => {
             event.preventDefault();
-            setMenu(item.name);
+            setMenu([item.name]);
             close();
             router.push(item.path);
           }}

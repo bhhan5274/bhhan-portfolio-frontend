@@ -139,7 +139,7 @@ export default function Page() {
         <NativeSelect
           value={type}
           onChange={(event) => {
-            setType(event.currentTarget.value);
+            setType(event.currentTarget.value as SkillType);
             setPage(1);
           }}
           data={[

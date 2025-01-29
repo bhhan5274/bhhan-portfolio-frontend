@@ -7,7 +7,7 @@ import { Box } from '@mantine/core';
 
 type Props = {
   children: React.ReactNode;
-  login: string;
+  login: boolean;
   pathName: string;
 };
 

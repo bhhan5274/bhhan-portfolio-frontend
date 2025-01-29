@@ -85,7 +85,7 @@ export function ProjectView({ project }: Props) {
                     showClass: false,
                     hideClass: false,
                     dragToClose: false,
-                    Image: { zoom: false },
+                    Images: { zoom: false },
                     Toolbar: {
                       display: {
                         left: [],

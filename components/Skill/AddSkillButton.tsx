@@ -21,7 +21,7 @@ import { ImageHolder } from '@/components/ImageHolder/ImageHolder';
 import { useRefetchCallback } from '@/hooks/fetch/fetchHooks';
 import { ImageUploadResponse, useImageDelete, useImageListUpload } from '@/hooks/image/imageHooks';
 import { useNotification } from '@/hooks/notification/notificationHooks';
-import { Skill, useAddSkill } from '@/hooks/skill/skillHooks';
+import { Skill, Type, useAddSkill } from '@/hooks/skill/skillHooks';
 import { getOriginalFileName } from '@/utils/common/common';
 
 type Props = {
@@ -200,7 +200,7 @@ export function AddSkillButton({ successCallback }: Props) {
             value={form.getValues().type}
             onChange={(event) => {
               form.setValues({
-                type: event.currentTarget.value,
+                type: event.currentTarget.value as Type,
               });
             }}
             data={[

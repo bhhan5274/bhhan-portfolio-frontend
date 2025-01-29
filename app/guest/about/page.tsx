@@ -302,10 +302,10 @@ export default function Page() {
         </Flex>
         <SimpleGrid
           cols={{
-            base: '1',
-            sm: '2',
-            md: '3',
-            lg: '4',
+            base: 1,
+            sm: 2,
+            md: 3,
+            lg: 4,
           }}
           my="50"
         >

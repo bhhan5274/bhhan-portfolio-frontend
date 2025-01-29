@@ -5,8 +5,8 @@ import { Box, Image, rem } from '@mantine/core';
 type ImageHolderProps = {
   radius: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   src?: string;
-  height: number;
-  width: number;
+  height: number | string;
+  width: number | string;
   deleteCallback?: () => void;
   useDelete?: boolean;
 };
