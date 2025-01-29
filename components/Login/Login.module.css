@@ -1,0 +1,8 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    @mixin smaller-than $mantine-breakpoint-sm {
+        max-width: 100%;
+    }
+}

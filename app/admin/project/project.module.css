@@ -1,0 +1,5 @@
+.pill {
+    background-color: var(--mantine-color-blue-6);
+    font-weight: 700;
+    color: white;
+}

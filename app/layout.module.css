@@ -1,0 +1,65 @@
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+    border-radius: var(--mantine-radius-md);
+    font-weight: 500;
+
+    &[data-selected="true"] {
+        color: var(--mantine-color-blue-6);
+    }
+
+    @mixin hover {
+        background-color: var(--mantine-color-gray-0);
+    }
+
+    @mixin smaller-than $mantine-breakpoint-sm {
+        width: 100%;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--mantine-spacing-lg);
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 10px;
+    background-color: var(--mantine-color-body);
+
+    @mixin smaller-than $mantine-breakpoint-sm {
+        justify-content: flex-start;
+        gap: var(--mantine-spacing-sm);
+    }
+}
+
+.main {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: var(--mantine-spacing-lg);
+}
+
+.wrapper {
+    background-color: #F5F5F5;
+    height: 115px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--mantine-spacing-xl);
+}
