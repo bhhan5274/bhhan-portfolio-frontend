@@ -45,5 +45,5 @@ export function getMenus(mode: Mode): MenuItem[] {
   return adminMenus;
 }
 
-export const id = 'bhhan';
-export const pw = 'HelloWorld';
+export const id = process.env.NEXT_PUBLIC_USER_NAME;
+export const pw = process.env.NEXT_PUBLIC_PASSWORD;
